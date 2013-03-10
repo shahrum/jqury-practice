@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FADE</title>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+					$("button").click(function(){
+						$("#div1").fadeTo(400,0.5);
+						$("#div2").fadeTo(800,0.25);
+					});
+				});
+
+
+
+	</script>
+</head>
+<body>
+	<button>FADE in</button>
+	<p>if you click you see fade to</p>
+	<br>
+	<div id="div1" style="width:40px;height:40px;display:none;background-color:red;"></div><br>
+	<div id="div2" style="width:90px;height:90px;display:none;background-color:green;"></div>
+</body>
+</html>
